@@ -1,38 +1,263 @@
-.App {
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* navbar */
+
+
+#navbar{
+  width: 100%;
+  position: sticky;
+  top: 0%;
+}
+
+.navbar{
+  background-color: black !important;
+  color: aliceblue !important;
+}
+
+.navbar-brand{
+  color: white !important;
+  padding-left: 40px;
+ font-family: 'Lucida Sans Regular';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-link{
+  color: white;
+   font-weight: bold;
+
+  font-family: 'Segoe UI';
+}
+
+.nav-item{
+  padding-right: 100px;
+}
+
+.nav-link:hover{
+  color: rgb(47, 47, 242);
+}
+
+.navbar-toggler{
+  color: white !important;
+  background-color: blue !important;
+}
+
+
+
+/* home */
+
+#main{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(1, 1, 48, 0.979);
+}
+#text1{
+  padding-top: 150px;
+}
+
+#text1 h1{
+  color: white;
+  font-size: 60px;
+  font-family: 'Lucida Sans Regular';
+}
+
+#text1 h4{
+  color: white;
+  padding-right: 20px;
+}
+
+#bot{
+  width: 390px;
+  margin-top: 100px;
+  margin-left: 130px;
+}
+
+#btn{
+  width: 110px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#footer{
+  background-color: rgba(1, 1, 48, 0.979);
+  color: white;
+  padding-top: 60px;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dynamic li{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+
+@media (max-width: 450px) {
+ #bot{
+  margin-left: 0px;
+  width: 250px;
+  margin-left: 50px;
+ }
+ #text1{
+  padding-top: 150px;
+  padding-left: 35px;
+}
+.nav-item{
+  text-align: center;
+  padding-left: 80px;
+}
+#main{
+  width: 100%;
+  height: 153vh;
+  background-color: rgba(1, 1, 48, 0.979);
+}
+#chat01{
+  width: 150px;
+}
+#chat01 {
+  border: 3px solid blueviolet;
+}
+
+}
+
+@media (max-width: 376px) {
+  #bot{
+   margin-left: 0px;
+   width: 250px;
+   margin-left: 50px;
   }
+  #text1{
+   padding-top: 150px;
+   padding-left: 35px;
+ }
+ .nav-item{
+   text-align: center;
+   padding-left: 80px;
+ }
+ #main{
+   width: 100%;
+   height: 155vh;
+   background-color: rgba(1, 1, 48, 0.979);
+ }
+ 
+ }
+ 
+
+ /* chat */
+ .container{
+  border: 1px solid whitesmoke;
+  width: 90%;
+  height: 70%;
+  position: relative;
+
+ }
+
+ #main1{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(1, 1, 48, 0.979);
+ }
+
+ #chat {
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+  /* Add more styling properties as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.chat-messages {
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  /* Add more styling properties as needed */
+}
+
+.message-content {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  /* Add more styling properties as needed */
+}
+
+.human .message-content {
+  background-color: lightblue;
+  /* Add more styling properties as needed */
+}
+
+.bot .message-content {
+  background-color: lightgreen;
+  /* Add more styling properties as needed */
+}
+.message .message-content {
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+#input1{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+#chat01{
+  width: 500px;
+}
+#chat01 {
+  border: 3px solid blueviolet;
+}
+
+#btn02{
+  width: 150px;
+  margin-left: 50px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#color{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 450px) {
+  #chat01{
+    width: 280px;
+  }
+  #chat01 {
+    border: 3px solid blueviolet;
+  }
+  #btn02{
+    width: 150px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+ 
+
