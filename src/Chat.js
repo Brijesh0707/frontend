@@ -20,7 +20,7 @@ const Chat = () => {
     updateqna(human, question);
 
     setLoading(true);
-    axios.post('http://localhost:8000/bot', {
+    axios.post('https://server-zmv0.onrender.com/bot', {
       query: question,
     })
       .then((response) => {
